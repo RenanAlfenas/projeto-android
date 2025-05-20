@@ -1,0 +1,216 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face { font-family: "android";
+    src: url("../fontes/idroid.otf") format("opentype");
+}
+
+:root {
+        --cor0: #c5ebd6;
+        --cor1: #83e1ad;
+        --cor2: #3ddc84;
+        --cor3: #2fa866;
+        --cor4: #1a5c37;
+        --cor5: #063d1e;
+
+        --font-padrao: Arial, verdana, helvetica, sans-serif;
+        --font-destaque: "Bebas Neue", cursive;
+        --font-android: 'android', cursive
+    }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    }
+ 
+/* essa é a área onde vou estilizar o cabeçalho do meu site
+*/
+header {
+    font-family: var(--font-destaque);
+    color: white;
+    background-image: linear-gradient(to top, #063d1e,#2fa866);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.245);
+    margin: auto;
+   
+}
+
+
+nav {
+   background-color: #063d1e;
+    }
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+nav > a:hover {
+    text-decoration: underline;    
+    background-color: var(--cor1);
+    transition-duration: 0.8s;
+    color: var(--cor5);
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+/* essa é a área onde vou estilizar o corpo do meu site
+*/
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--font-padrao);
+    min-width:300px ;
+    max-width: 700px;
+    margin: auto;
+    }
+
+main {
+    background-color: white;
+    padding: 30px 100px 0px 100px;
+    min-width:280px ;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: -10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.241);
+    }
+
+article > h1 {
+    font-family: var(--font-android);
+    color: var(--cor4);
+            }
+
+article > h2 {
+    font-family: var(--font-android);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, #c5ebd6, white);
+}
+
+strong {
+    color: var(--cor3);
+}
+
+main a {
+    text-decoration: none;
+    color:var(--cor4);
+    font-weight: bold;
+}
+
+main a::after {
+    content: "\1F517";
+   
+}
+
+main a:hover {
+    text-decoration: underline;
+     background-color: var(--cor1);
+    color: var(--cor5);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.asi > a {
+    color: var(--cor5);
+}
+
+.asi > a:hover {
+    background-color: var(--cor5);
+    color: var(--cor0);
+    
+}
+
+main img {
+    width: 100%;
+    display: block;
+    margin: auto ;
+   
+}
+
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+main p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    line-height: 1.7em;
+    text-indent: 15px;
+}
+
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -90px 30px -90px;
+    position: relative;
+    padding-bottom: 70%;
+}
+
+div.video > iframe {
+    padding: 8px;
+    position:absolute;
+    top: 3%;
+    bottom: 5%;
+    left: 4%;
+    width: 90%;
+    height: 90%;
+    
+}
+
+    
+
+
+/* esta é a área onde vou estilizar o conteúdo periférico do meu site
+*/ 
+
+aside {
+
+    background-color: var(--cor1);
+    border-radius: 10px;
+     padding: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.171);
+   
+}
+
+aside h3 {
+    color: white;
+    background-color: var(--cor5);
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    
+    
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "\2714\00A0"; 
+}
+
+
+
+
+
+/* esta é a área onde vou estilizar o rodapé do meu site
+*/
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+
+}

@@ -78,7 +78,7 @@ body {
 
 main {
     background-color: white;
-    padding: 30px 100px 0px 100px;
+    padding: 30px 30px 0px 30px;
     min-width:280px ;
     max-width: 700px;
     margin: auto;
@@ -153,10 +153,11 @@ main p {
 }
 
 div.video {
-    background-color: var(--cor4);
-    margin: 0px -90px 30px -90px;
+    background-color: var(--cor0);
+    margin: 0px -25px 30px -25px;
     position: relative;
     padding-bottom: 70%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.312);
 }
 
 div.video > iframe {
@@ -180,7 +181,7 @@ aside {
 
     background-color: var(--cor1);
     border-radius: 10px;
-     padding: 10px;
+    padding: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.171);
    
 }
@@ -199,6 +200,7 @@ aside > ul {
     list-style-position: inside;
     columns: 2;
     list-style-type: "\2714\00A0"; 
+    width: 315px;
 }
 
 
